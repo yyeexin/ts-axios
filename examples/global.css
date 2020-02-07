@@ -1,0 +1,24 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
+    'Courier New', Courier, monospace;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  line-height: 2em;
+  padding-left: 3em;
+}
+
+a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4fc08d;
+}
