@@ -17,7 +17,6 @@ export function processHeader(headers: any, data: any): any {
       headers['Content-Type'] = 'application/json;charset=utf-8'
     }
   }
-
   return headers
 }
 
@@ -31,6 +30,5 @@ export function parseHeaders(headers: string): any {
     if (val) val = val.trim()
     parsed[key] = val
   })
-
   return parsed
 }
