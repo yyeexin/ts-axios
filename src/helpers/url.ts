@@ -1,4 +1,4 @@
-import { isDate, isObject } from './util'
+import { isDate, isPlainObject } from './util'
 
 function encode(val: string): string {
   return encodeURIComponent(val)
@@ -32,7 +32,7 @@ export function buildURL(url: string, params?: any): string {
         //toISOString() 方法可以使用ISO标准将 Date 对象转换为字符串。
         //该标准称为 ISO-8601 ，格式为: YYYY-MM-DDTHH:mm:ss.sssZ
         val = val.toISOString()
-      } else if (isObject(val)) {
+      } else if (isPlainObject(val)) {
         val = JSON.stringify(val)
       }
       parts.push(`${encode(key)}=${encode(val)}`)
